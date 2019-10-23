@@ -14,6 +14,7 @@ def initPoints():
     f1.write(points)
     f1.close()
 
+    read = []
     f1 = open('D:\\python\\lesson9\\max_num.txt')
     read = f1.read()
     print(f1)

@@ -85,48 +85,104 @@
 
 # 5) Пользователь вводит список чисел через пробел, вывести новый список
 #  в котором элементы из введенного пользователем списка будут умножены на 2 с помощью списковых включений.
-a1 = input("enter numbers").split(',')
+# a1 = input("enter numbers").split(',')
 
-newList = []
-for i in a1:
-  newList.append(int(i)) 
+# newList = []
+# for i in a1:
+#   newList.append(int(i)) 
 
-res1 = [x*2 for x in newList]
-print(res1)
-
-
-# 6) Пользователь вводит список чисел через пробел, вывести новый список содержащий 
-# только четные элементы (с помощью списковых включений)
-
-a = input("Enter the number").split()
-b_list = []
-c_list = []
-i = 0
-for i in a:
-  b_list.append(int(i))
-
-c_list = [x for x in b_list if x % 2 == 0]
-# for x in b_list:
-#   if x % 2 == 0:
-#     c_list.append(int(x))
-
-print(c_list)
-
-# 7) Дан список чисел от 1 до 31, обозначающий дни в месяце. Вывести список только рабочих дней месяца без выходных.(с помощью списковых включений)
-
-days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
-# days_a1 = []
-# days_a2 = []
+# res1 = [x*2 for x in newList]
+# print(res1)
 
 
-c_list = [x for x in days if x <= 5 or (x >= 8 and x <= 12) or (x >= 15 and x <= 19)]
+# # 6) Пользователь вводит список чисел через пробел, вывести новый список содержащий 
+# # только четные элементы (с помощью списковых включений)
 
-# for x in days:
-#   if x < 6:
-#     days_a1.append(int(x))
-#   if x >7 and x<13:
-#     days_a2.append(int(x))
+# a = input("Enter the number").split()
+# b_list = []
+# c_list = []
+# i = 0
+# for i in a:
+#   b_list.append(int(i))
+
+# c_list = [x for x in b_list if x % 2 == 0]
+# # for x in b_list:
+# #   if x % 2 == 0:
+# #     c_list.append(int(x))
+
+# print(c_list)
+
+# # 7) Дан список чисел от 1 до 31, обозначающий дни в месяце. Вывести список только рабочих дней месяца без выходных.(с помощью списковых включений)
+
+# days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+# # days_a1 = []
+# # days_a2 = []
 
 
-print(str(c_list))
-# print("Second week" + str(days_a2))
+# c_list = [x for x in days if x <= 5 or (x >= 8 and x <= 12) or (x >= 15 and x <= 19)]
+
+# # for x in days:
+# #   if x < 6:
+# #     days_a1.append(int(x))
+# #   if x >7 and x<13:
+# #     days_a2.append(int(x))
+
+
+# print(str(c_list))
+# # print("Second week" + str(days_a2))
+
+
+# 8) Генерируется квадратная матрица
+#  (с помощью списковых включений). Найти сумма элементов ее главной и побочной диагоналей.
+a = [[1,2,3],[4,5,6],[7,8,9]]
+n=3
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        print(a[i][j], end = '')
+    print()
+
+# for i in a:
+# 	print(i[0])
+# 	break
+
+# for i in a:
+# 	print(i[2])
+# 	break
+	
+
+sumMain = 0
+sumSecondary = 0
+for i in range(n):
+    sumMain += a[i][i]
+    sumSecondary += a[i][n-i-1]
+
+print(sumMain)
+print(sumSecondary)
+
+
+# 9) Попросить пользователя ввести информацию про членов его семьи 
+# записывая их имя и возраст в отдельные словари списка. Вывести имя самого пожилого человека в семье.
+
+		
+# dict_age = {}
+# while (True):
+# 	print("Enter the name")
+# 	user_name = input()
+# 	if user_name == '':
+# 		break
+# 	print("Enter age")
+# 	user_age1 = input()
+# 	user_age = int(user_age1)
+# 	dict_age[user_name] = user_age
+# print(dict_age)
+
+
+	
+
+
+
+	
+
+    
+   	
+
